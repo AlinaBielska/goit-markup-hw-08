@@ -1,0 +1,8 @@
+.header {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    &--underline {
+        border-bottom: 1px solid var(--border-nav);
+    }
+}

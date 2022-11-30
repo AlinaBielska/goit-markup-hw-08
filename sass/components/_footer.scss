@@ -1,0 +1,40 @@
+.footer {
+    display: flex;
+    height: 252px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    background-color: var(--background-gray);
+    &__wrapper {
+        display: inline-block;
+        display: flex;
+        align-items: flex-start;
+        gap: 70px;
+    }
+    &__contact {
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--main-white);
+    }
+    &__list {
+        margin-top: 20px;
+        display: flex;
+        padding-left: 0;
+        flex-direction: column;
+        gap: 9px;
+    }
+}
+.footer__contact--pale {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-contact);
+    cursor: pointer;
+    &:hover, &:focus {
+        color: var(--brand-color);  
+    }
+}
+

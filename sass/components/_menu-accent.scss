@@ -1,0 +1,15 @@
+.menu__link--accent {
+    color: var(--brand-color);
+    &::after {
+        content: "";
+        display: block;
+        width: 53px;
+        height: 4px;
+        background-color: var(--brand-color);
+        border-radius: 2px;
+        transform: translateY(29px);
+    }
+}
+.menu__link--width::after {
+    width: 58px;
+}

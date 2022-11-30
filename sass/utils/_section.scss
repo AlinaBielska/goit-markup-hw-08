@@ -1,0 +1,14 @@
+// .section {
+//     padding: 94px 0;
+//     padding-left: 0;
+// }
+
+.section {
+    @media screen and (max-width: 1199px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }

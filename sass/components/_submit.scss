@@ -1,0 +1,20 @@
+.box {
+    &__submit {
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: var(--brand-color);
+    color: var(--main-white);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: 0; 
+    }
+    &__send {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    }
+}
