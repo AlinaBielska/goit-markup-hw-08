@@ -298,6 +298,7 @@ li {
 
 @media (min-width: 1200px) {
   .services {
+    display: block;
     padding-top: 0;
   }
   .services__wrapper {
