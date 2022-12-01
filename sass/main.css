@@ -236,8 +236,8 @@ li {
 }
 
 .services {
+  width: 100%;
   display: none;
-  max-width: 1199px;
 }
 
 @media (min-width: 1200px) {

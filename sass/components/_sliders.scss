@@ -2,38 +2,65 @@
 .sliders {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+    &__svg {
+        width: 450px;
+        height: 120px;
+        border-radius: 4px;
+        background-color: var(--background-bright);
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    &__text {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        text-align: left;
+        color: var(--extra-gray);
+        margin: 0;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--main-color);
+        margin-top: 30px;
+        margin-bottom: 10px;
+}
 }
 
-// @media screen and (min-width: 1200px) {
-// .sliders {
-//     display: flex;
-//     gap: 30px;
-//     margin: 0;
-//     &__text {
-//         font-size: 14px;
-//         line-height: 1.71;
-//         letter-spacing: 0.03em;
-//         text-align: left;
-//         color: var(--extra-gray);
-//         margin: 0;
-//     }
-//     &__title {
-//         font-weight: 700;
-//         font-size: 14px;
-//         line-height: 1.14;
-//         letter-spacing: 0.03em;
-//         text-transform: uppercase;
-//         color: var(--main-color);
-//         margin-top: 30px;
-//         margin-bottom: 10px;
-//     }
-//     &__svg {
-//         width: 270px;
-//         height: 120px;
-//         border-radius: 4px;
-//         background-color: var(--background-bright);
-//         padding-top: 25px;
-//         padding-bottom: 25px;
-//     }
-// }
-// }
+@media screen and (min-width: 768px) {
+    .sliders {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 0;
+        &__wrapper {
+            width: 354px;
+            align-items: flex-start;
+        }
+        &__svg {
+            width: 354px;
+        }
+    }
+    }
+
+@media screen and (min-width: 1200px) {
+.sliders {
+    &__wrapper {
+        width: 270px;
+    }
+    &__svg {
+        width: 270px;
+    }
+}
+}
