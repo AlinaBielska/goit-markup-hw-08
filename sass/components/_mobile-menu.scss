@@ -1,0 +1,68 @@
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    background-color: var(--main-white);
+    position: fixed;
+    padding: 48px 40px;
+    &__button {
+        position: absolute;
+        top: 22px;
+        right: 22px;
+        border: none;
+        background-color: inherit;
+    }
+    &__link {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: var(--main-color);
+    }
+    &__item:not(:first-child) {
+        margin-top: 36px;
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        position: absolute;
+        bottom: 134px;
+    }
+    &__contact {
+        font-weight: 500;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        &--phone {
+            font-size: 34px;
+            color: var(--brand-color);
+            margin-bottom: 32px;
+        }
+        &--mail {
+            font-size: 24px;
+            color: var(--extra-gray);
+        }
+    }
+    &__social-links {
+        display: flex;
+        position: absolute;
+        bottom: 48px;
+    }
+    &__element {
+        margin-right: 10px;
+        &:not(:last-child) {
+            padding-right: 10px;
+            border-right: 1px solid var(--fieldset);
+        }
+    }
+    &__social-link {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: var(--brand-color);
+    }
+}

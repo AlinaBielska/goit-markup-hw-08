@@ -1,8 +1,39 @@
 .header {
     display: flex;
     align-items: center;
-    height: 80px;
-    &--underline {
-        border-bottom: 1px solid var(--border-nav);
+    height: 60px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__button {
+        border: none;
+        background-color: inherit;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    &__svg {
+        
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .header {
+        &__button {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        display: flex;
+        align-items: center;
+        height: 80px;
+        &--underline {
+            border-bottom: 1px solid var(--border-nav);
+        }
     }
 }
