@@ -5,6 +5,8 @@
     display: flex;
     justify-content: center;
     &__text {
+        font-size: 12px;
+        line-height: 1.16;
         line-height: 1.71;
         color: var(--label-box);
         position: relative;
@@ -21,4 +23,13 @@
 }
 input:checked + span .accept__svg {
     opacity: 1;
+}
+
+@media screen and (min-width: 1200px) {
+    .accept {
+        &__text {
+            font-size: 14px;
+            line-height: 1.71;
+        }
+    }
 }

@@ -1,22 +1,20 @@
 .introduction {
-    height: 600px;
-    margin: 0 auto;
-    padding: 200px 0;
+    height: 400px;
+    padding: 118px 57px;
     background-color: var(--background-gray);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-picture.jpg);
-    max-width: 1600px;
+    max-width: 480px;
     background-repeat: no-repeat;
     background-size: cover;
     &__text {
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
+        font-size: 26px;
+        line-height: 1.61;
         text-align: center;
         letter-spacing: 0.06em; 
         text-transform: uppercase;
         color: var(--main-white);
-        width: 696px;
-        margin: 0 auto;
+        margin: auto;
     }
     &__button {
         font-weight: 700;
@@ -36,5 +34,19 @@
         margin: 0 auto;
         margin-top: 30px;
     }
+}
+
+@media screen and (min-width: 1200px) {
+    .introduction {
+        height: 600px;
+        margin: 0 auto;
+        padding: 200px 0;
+        max-width: 1600px;
+        &__text {
+            font-size: 44px;
+            line-height: 1.36;
+            width: 696px;
+        }
+}
 }
 
