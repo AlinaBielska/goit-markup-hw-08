@@ -1,11 +1,14 @@
 .subscription {
     display: flex;
-    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     margin-top: 30px;
     &__title {
         position: absolute;
         top: -30px;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
         font-weight: 700;
         line-height: 1.14;
         text-transform: uppercase;
@@ -14,12 +17,14 @@
     &__form {
         display: flex;
         position: relative;
-        width: 358px;
+        width: 450px;
         height: 50px;
         border: 1px solid var(--subscription);
         border-radius: 4px;
     }
     &__input {
+        width: 95%;
+        height: 38px;
         font-size: 16px;
         line-height: 1.25;
         color: var(--color-contact);
@@ -46,4 +51,20 @@
         line-height: 1.87;
         letter-spacing: 0.06em;
     }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .subscription {
+        flex-direction: row;
+        gap: 12px;
+        &__form {
+            width: 358px;
+        }
+        &__title {
+            left: 0;
+            transform: translateX(0);
+        }
+    }
+    
 }

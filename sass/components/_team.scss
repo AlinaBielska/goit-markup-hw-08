@@ -1,7 +1,9 @@
 .team {
+    width: 100%;
     background-color: var(--background-bright);
     &__wrapper {
         display: flex;
+        flex-direction: column;
         gap: 30px;
     }
     &__element {
@@ -14,8 +16,8 @@
         color: var(--extra-gray);
         background-color: var(--main-white);
         margin: 0;
-        width: 270px;
-        height: 428px;
+        width: 450px;
+        height: 622px;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
     }
@@ -49,5 +51,27 @@
             fill: var(--main-white);
             cursor: pointer;
         }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .team {
+    &__wrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    &__element {
+        width: 354px;
+        height: 536px; 
+    }
+}
+}
+
+@media screen and (min-width: 1200px) {
+    .team {
+    &__element {
+        width: 270px;
+        height: 428px; 
+    }
     }
 }

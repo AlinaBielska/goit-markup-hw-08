@@ -1,4 +1,7 @@
 .media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     &__text {
         font-weight: 700;
         font-size: 14px;
@@ -29,5 +32,11 @@
             fill: var(--main-white);
             cursor: pointer;
         }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .media {
+        align-items: flex-start;
     }
 }
