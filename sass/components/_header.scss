@@ -13,14 +13,14 @@
         right: 10px;
         top: 10px;
     }
-    &__svg {
-        
-    }
 }
 
 
 @media screen and (min-width: 768px) {
     .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         &__button {
             display: none;
         }

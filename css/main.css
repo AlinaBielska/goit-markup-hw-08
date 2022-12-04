@@ -114,6 +114,11 @@ a {
   color: var(--main-white);
 }
 
+@media screen and (min-width: 768px) {
+  .logo--theme-dark {
+    position: static;
+  }
+}
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
@@ -204,7 +209,13 @@ a {
   right: 10px;
   top: 10px;
 }
+
 @media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .header__button {
     display: none;
   }
@@ -223,16 +234,15 @@ a {
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .menu {
     display: inline-block;
-    margin-left: 93px;
   }
   .menu__list {
     display: flex;
     justify-content: space-between;
     padding: 0;
-    gap: 46px;
+    gap: 60px;
   }
   .menu__link {
     font-size: 14px;
@@ -245,6 +255,11 @@ a {
   }
   .menu__link:hover, .menu__link:focus {
     color: var(--brand-color);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu__list {
+    gap: 46px;
   }
 }
 .menu__link--accent {
@@ -268,10 +283,12 @@ a {
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .contact {
-    margin-left: auto;
+    display: inline-block;
     display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   .contact__icon {
     margin-right: 10px;
@@ -287,11 +304,15 @@ a {
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
-    display: flex;
     align-items: center;
   }
   .contact__link:hover, .contact__link:focus {
     color: var(--brand-color);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    flex-direction: row;
   }
   .contact__link--premiere {
     margin-right: 30px;
