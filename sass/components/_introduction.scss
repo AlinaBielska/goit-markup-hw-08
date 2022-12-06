@@ -3,7 +3,8 @@
     padding: 118px 57px;
     background-color: var(--background-gray);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-picture.jpg);
-    max-width: 480px;
+    background-image: cover;
+    max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     &__text {
@@ -35,12 +36,17 @@
         margin-top: 30px;
     }
 }
+@media screen and (min-width: 768px) {
+    .introduction {
+        padding: 118px 200px;
+    }
+}
 
 @media screen and (min-width: 1200px) {
     .introduction {
         height: 600px;
         margin: 0 auto;
-        padding: 200px 0;
+        padding: 200px 200px;
         max-width: 1600px;
         &__text {
             font-size: 44px;
