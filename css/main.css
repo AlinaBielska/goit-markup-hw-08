@@ -57,6 +57,12 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 100%;
   min-width: 320px;
@@ -326,9 +332,9 @@ a {
 }
 .introduction {
   height: 400px;
-  padding: 118px 57px;
+  padding: 118px 0px;
   background-color: var(--background-gray);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-picture.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-picture.480.img);
   background-image: cover;
   max-width: 100%;
   background-repeat: no-repeat;
@@ -409,7 +415,7 @@ a {
   gap: 10px;
 }
 .sliders__svg {
-  width: 450px;
+  width: 100%;
   height: 120px;
   border-radius: 4px;
   background-color: var(--background-bright);
@@ -504,8 +510,6 @@ a {
   gap: 30px;
 }
 .team__element {
-  display: flex;
-  flex-direction: column;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -513,8 +517,6 @@ a {
   color: var(--extra-gray);
   background-color: var(--main-white);
   margin: 0;
-  width: 450px;
-  height: 622px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -828,7 +830,7 @@ a {
 }
 .subscription__title {
   position: absolute;
-  top: -30px;
+  top: -35px;
   left: 50%;
   transform: translateX(-50%);
   font-weight: 700;
@@ -839,7 +841,8 @@ a {
 .subscription__form {
   display: flex;
   position: relative;
-  width: 450px;
+  width: 95vw;
+  max-width: 450px;
   height: 50px;
   border: 1px solid var(--subscription);
   border-radius: 4px;
@@ -912,8 +915,6 @@ a {
 
 .box {
   position: absolute;
-  height: 609px;
-  width: 450px;
   background-color: var(--main-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -921,6 +922,11 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
+  width: 95%;
+  max-width: 450px;
+  height: 95%;
+  max-height: 609px;
+  overflow: scroll;
 }
 .box__title {
   text-align: center;

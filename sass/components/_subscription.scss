@@ -6,7 +6,7 @@
     margin-top: 30px;
     &__title {
         position: absolute;
-        top: -30px;
+        top: -35px;
         left: 50%;
         transform: translateX(-50%);
         font-weight: 700;
@@ -17,7 +17,8 @@
     &__form {
         display: flex;
         position: relative;
-        width: 450px;
+        width: 95vw;
+        max-width: 450px;
         height: 50px;
         border: 1px solid var(--subscription);
         border-radius: 4px;
@@ -52,7 +53,6 @@
         letter-spacing: 0.06em;
     }
 }
-
 
 @media screen and (min-width: 1200px) {
     .subscription {
