@@ -156,6 +156,9 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-color);
 }
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: var(--brand-color);
+}
 .mobile-menu__item:not(:first-child) {
   margin-top: 36px;
 }
@@ -182,6 +185,8 @@ img {
 }
 .mobile-menu__social-links {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   position: absolute;
   bottom: 48px;
 }
@@ -334,7 +339,7 @@ img {
   height: 400px;
   padding: 118px 0px;
   background-color: var(--background-gray);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-picture.480.img);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-picture.480.jpg);
   background-image: cover;
   max-width: 100%;
   background-repeat: no-repeat;
@@ -369,9 +374,20 @@ img {
   margin-top: 30px;
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .introduction {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-picture.480@2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .introduction {
     padding: 118px 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-picture.768.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .introduction {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-picture.768@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -380,11 +396,17 @@ img {
     margin: 0 auto;
     padding: 200px 200px;
     max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-picture.1600.jpg);
   }
   .introduction__text {
     font-size: 44px;
     line-height: 1.36;
     width: 696px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .introduction {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-picture.1600@2x.jpg);
   }
 }
 .title {
@@ -570,6 +592,7 @@ img {
 }
 .clients {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
   padding: 0;
@@ -735,6 +758,7 @@ img {
 .footer__column {
   display: flex;
   flex-direction: column;
+  align-items: baseline;
   gap: 60px;
 }
 
@@ -957,8 +981,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .box {
-    height: 582px;
-    width: 528px;
+    max-height: 582px;
+    max-width: 528px;
   }
 }
 .form {

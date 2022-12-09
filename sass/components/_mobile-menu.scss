@@ -21,9 +21,14 @@
         line-height: 1.17;
         letter-spacing: 0.02em;
         color: var(--main-color);
+        &:hover, &:focus {
+            color: var(--brand-color);
+        }
     }
-    &__item:not(:first-child) {
-        margin-top: 36px;
+    &__item {
+        &:not(:first-child) {
+            margin-top: 36px;
+        }
     }
     &__contacts {
         display: flex;
@@ -48,6 +53,8 @@
     }
     &__social-links {
         display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
         position: absolute;
         bottom: 48px;
     }
