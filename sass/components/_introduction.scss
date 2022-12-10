@@ -2,7 +2,7 @@
     height: 400px;
     padding: 118px 0px;
     background-color: var(--background-gray);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-picture.480.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-picture.480.jpg);
     background-image: cover;
     max-width: 100%;
     background-repeat: no-repeat;
@@ -41,21 +41,21 @@ screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
     .introduction {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../../images/background-picture.480@2x.jpg);
+            url(../images/background-picture.480@2x.jpg);
     }
 }
 
 @media screen and (min-width: 768px) {
     .introduction {
         padding: 118px 200px;
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-picture.768.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-picture.768.jpg);
     }
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
             .introduction {
                 background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                    url(../../images/background-picture.768@2x.jpg);
+                    url(../images/background-picture.768@2x.jpg);
             }
         }
 }
@@ -66,7 +66,7 @@ screen and (min-resolution: 2dppx) {
         margin: 0 auto;
         padding: 200px 200px;
         max-width: 1600px;
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background-picture.1600.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-picture.1600.jpg);
         &__text {
             font-size: 44px;
             line-height: 1.36;
@@ -78,7 +78,7 @@ screen and (min-resolution: 192dpi),
 screen and (min-resolution: 2dppx) {
     .introduction {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../../images/background-picture.1600@2x.jpg);
+            url(../images/background-picture.1600@2x.jpg);
     }
 }
 }
