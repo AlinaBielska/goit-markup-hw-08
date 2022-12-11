@@ -7,15 +7,9 @@
         height: 4px;
         background-color: var(--brand-color);
         border-radius: 2px;
-        transform: translateY(20px);
+        transform: translateY(30px);
     }
 }
 .menu__link--width::after {
     width: 58px;
-}
-
-@media screen and (min-width: 1200px) {
-    .menu__link--accent::after {
-        transform: translateY(30px);
-    }
 }

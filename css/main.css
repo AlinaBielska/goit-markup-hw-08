@@ -2,7 +2,6 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: var(--main-white);
   color: var(--main-color);
-  margin: 0;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -227,6 +226,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 80px;
   }
   .header__button {
     display: none;
@@ -236,7 +236,6 @@ img {
   .header {
     display: flex;
     align-items: center;
-    height: 80px;
   }
   .header--underline {
     border-bottom: 1px solid var(--border-nav);
@@ -284,18 +283,13 @@ img {
   height: 4px;
   background-color: var(--brand-color);
   border-radius: 2px;
-  transform: translateY(20px);
+  transform: translateY(30px);
 }
 
 .menu__link--width::after {
   width: 58px;
 }
 
-@media screen and (min-width: 1200px) {
-  .menu__link--accent::after {
-    transform: translateY(30px);
-  }
-}
 .contact {
   display: none;
 }
@@ -341,7 +335,7 @@ img {
   background-color: var(--background-gray);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-picture.480.jpg);
   background-image: cover;
-  max-width: 100%;
+  max-width: 1600px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -395,7 +389,6 @@ img {
     height: 600px;
     margin: 0 auto;
     padding: 200px 200px;
-    max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background-picture.1600.jpg);
   }
   .introduction__text {
@@ -581,13 +574,11 @@ img {
   }
   .team__element {
     width: 354px;
-    height: 536px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__element {
     width: 270px;
-    height: 428px;
   }
 }
 .clients {
@@ -853,23 +844,19 @@ img {
   margin-top: 30px;
 }
 .subscription__title {
-  position: absolute;
-  top: -35px;
-  left: 50%;
-  transform: translateX(-50%);
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-white);
+  margin-bottom: 20px;
 }
 .subscription__form {
   display: flex;
-  position: relative;
   width: 95vw;
   max-width: 450px;
-  height: 50px;
-  border: 1px solid var(--subscription);
-  border-radius: 4px;
+  flex-direction: column;
+  align-items: center;
+  border: none;
 }
 .subscription__input {
   width: 95%;
@@ -880,6 +867,9 @@ img {
   border: 0;
   outline: 0;
   background-color: transparent;
+  border: 1px solid var(--subscription);
+  border-radius: 4px;
+  padding: 20px;
 }
 .subscription__btn {
   width: 200px;
@@ -905,13 +895,19 @@ img {
   .subscription {
     flex-direction: row;
     gap: 12px;
+    align-items: flex-end;
+    margin-top: 0;
   }
   .subscription__form {
     width: 358px;
+    padding-bottom: 0;
   }
   .subscription__title {
     left: 0;
     transform: translateX(0);
+  }
+  .subscription__input {
+    padding: 25px;
   }
 }
 .backdrop {
